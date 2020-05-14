@@ -1,0 +1,9 @@
+[submodule "York/vendor/spdlog"]
+	path = York/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "York/vendor/GLFW"]
+	path = York/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "York/vendor/imgui"]
+	path = York/vendor/imgui
+	url = https://github.com/TheCherno/imgui/

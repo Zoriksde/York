@@ -1,36 +1,93 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Pliki źródłowe">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pliki nagłówkowe">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pliki zasobów">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="York">
+      <UniqueIdentifier>{8AC48F7C-76FB-900D-1FE8-76100BFE0C0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="York\Events">
+      <UniqueIdentifier>{2EB19D73-9A66-1669-235B-10408F0F0D6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="York\ImGui">
+      <UniqueIdentifier>{34F93FF4-20B1-8141-89B8-5A9D758F1C32}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\York\Core.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York.h" />
     <ClInclude Include="src\York\Application.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>York</Filter>
     </ClInclude>
-    <ClInclude Include="src\York.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="src\York\Core.h">
+      <Filter>York</Filter>
     </ClInclude>
     <ClInclude Include="src\York\EntryPoint.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>York</Filter>
     </ClInclude>
+    <ClInclude Include="src\York\Events\ApplicationEvent.h">
+      <Filter>York\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Events\Event.h">
+      <Filter>York\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Events\KeyEvent.h">
+      <Filter>York\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Events\MouseEvent.h">
+      <Filter>York\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\ImGui\ImGuiLayer.h">
+      <Filter>York\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Layer.h">
+      <Filter>York</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\LayerStack.h">
+      <Filter>York</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Log.h">
+      <Filter>York</Filter>
+    </ClInclude>
+    <ClInclude Include="src\York\Window.h">
+      <Filter>York</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ykpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\York\Application.cpp">
-      <Filter>Pliki źródłowe</Filter>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\York\Application.cpp">
+      <Filter>York</Filter>
+    </ClCompile>
+    <ClCompile Include="src\York\ImGui\ImGuiLayer.cpp">
+      <Filter>York\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\York\Layer.cpp">
+      <Filter>York</Filter>
+    </ClCompile>
+    <ClCompile Include="src\York\LayerStack.cpp">
+      <Filter>York</Filter>
+    </ClCompile>
+    <ClCompile Include="src\York\Log.cpp">
+      <Filter>York</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ykpch.cpp" />
   </ItemGroup>
 </Project>
