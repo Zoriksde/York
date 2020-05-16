@@ -4,7 +4,7 @@
 namespace York {
 
 	LayerStack::LayerStack() {
-		m_LayerInsert = m_Layers.begin();
+		
 	}
 
 	LayerStack::~LayerStack() {
@@ -13,7 +13,8 @@ namespace York {
 	}
 
 	void LayerStack::PushLayer(Layer* layer) {
-		m_LayerInsert = m_Layers.emplace(m_LayerInsert, layer);
+		m_Layers.emplace(m_Layers.begin() + m_LayerInsertionIndex, layer);
+		m_LayerInsertionIndex++;
 	}
 
 	void LayerStack::PushOverlay(Layer* overlay) {
@@ -25,7 +26,7 @@ namespace York {
 		
 		if (it != m_Layers.end()) {
 			m_Layers.erase(it);
-			m_LayerInsert--;
+			m_LayerInsertionIndex--;
 		}
 	}
 

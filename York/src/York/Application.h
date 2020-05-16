@@ -6,6 +6,7 @@
 #include "York/LayerStack.h"
 #include "York/Events/Event.h"
 #include "York/Events/ApplicationEvent.h"
+#include "York/ImGui/ImGuiLayer.h"
 
 namespace York {
 
@@ -30,6 +31,8 @@ namespace York {
 		bool OnWindowClosed(WindowCloseEvent& event);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
+
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
